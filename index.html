@@ -14,7 +14,7 @@
 <body>
     <header>
         <!-- this is a nav  -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ps-5">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ps-5">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -24,17 +24,17 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">Shoes</a>
-                        <a class="nav-link" href="#">Backpack</a>
-                        <a class="nav-link " href="#">Subscribe</a>
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        <a class="nav-link" href="#shoes">Shoes</a>
+                        <a class="nav-link" href="#backpack">Backpack</a>
+                        <a class="nav-link " href="#subscribe">Subscribe</a>
                     </div>
                 </div>
             </div>
         </nav>
         <!-- this is slider -->
-        <section>
-            <div id="carouselExampleIndicators" class="carousel slide container mt-5" data-bs-ride="carousel">
+        <section id="home">
+            <div id="carouselExampleIndicators" class="carousel slide container panda-slider" data-bs-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
                     <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
@@ -48,7 +48,7 @@
                                 <p>This is the best tv in the world for people who just want to waste time in front of
                                     tv.</p>
                                 <h2>$1200</h2>
-                                <button class="btn btn-danger">Buy Now</button>
+                                <button class="btn panda-btn ">Buy Now</button>
                             </div>
                             <div class="col-md-5">
                                 <img src="images/banner-images/headphone.png" class="d-block w-100" alt="...">
@@ -58,26 +58,28 @@
                     <div class="carousel-item">
                         <div class="row d-flex align-items-center">
                             <div class="col-md-7">
-                              <h1>Mega LCD TV For Sports</h1>
-                              <p>This is the best tv in the world for people who just want to waste time in front of tv.</p>
-                              <h2>$1200</h2>
-                              <button class="btn btn-danger">Buy Now</button>
+                                <h1>Mega LCD TV For Sports</h1>
+                                <p>This is the best tv in the world for people who just want to waste time in front of
+                                    tv.</p>
+                                <h2>$1200</h2>
+                                <button class="btn panda-btn ">Buy Now</button>
                             </div>
                             <div class="col-md-5">
-                              <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
+                                <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="row d-flex align-items-center">
                             <div class="col-md-7">
-                              <h1>Mega LCD TV For Sports</h1>
-                              <p>This is the best tv in the world for people who just want to waste time in front of tv.</p>
-                              <h2>$1200</h2>
-                              <button class="btn btn-danger">Buy Now</button>
+                                <h1>Mega LCD TV For Sports</h1>
+                                <p>This is the best tv in the world for people who just want to waste time in front of
+                                    tv.</p>
+                                <h2>$1200</h2>
+                                <button class="btn panda-btn ">Buy Now</button>
                             </div>
                             <div class="col-md-5">
-                              <img src="images/banner-images/tv.png" class="d-block w-100" alt="...">
+                                <img src="images/banner-images/tv.png" class="d-block w-100" alt="...">
                             </div>
                         </div>
                     </div>
@@ -93,6 +95,147 @@
             </div>
         </section>
     </header>
+    <!-- this is categories -->
+    <main>
+        <div class="container overflow-hidden mt-5">
+            <div class="row g-5">
+                <div class="col">
+                    <div class="d-flex align-items-center justify-content-around all-categories rounded">
+                        <div>
+                            <h1>Watch</h1>
+                        </div>
+                        <div><img src="images/categories/watch.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex align-items-center justify-content-around all-categories rounded">
+                        <div>
+                            <h1>Bag</h1>
+                        </div>
+                        <div><img src="images/categories/bag.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex align-items-center justify-content-around all-categories rounded">
+                        <div>
+                            <h1>Shoes</h1>
+                        </div>
+                        <div><img src="images/categories/shoes.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- this is for all cards -->
+        <section id="shoes" class="mt-5 container">
+            <h1>SHOES</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card panda-card shadow rounded-3 h-100">
+                        <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <h3>$500</h3>
+                        </div>
+                        <div class="card-footer panda-footer">
+                            <div class="btn panda-btn ">Buy now >></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card panda-card shadow rounded-3 h-100">
+                        <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <h3>$500</h3>
+                        </div>
+                        <div class="card-footer panda-footer">
+                            <div class="btn panda-btn ">Buy now >></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card panda-card shadow rounded-3 h-100">
+                        <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <h3>$500</h3>
+                        </div>
+                        <div class="card-footer panda-footer">
+                            <div class="btn panda-btn  ">Buy now >></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="backpack" class="mt-5 container">
+            <h1>BAGS</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card panda-card shadow rounded-3 h-100">
+                        <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <h3>$500</h3>
+                        </div>
+                        <div class="card-footer panda-footer">
+                            <div class="btn panda-btn ">Buy now >></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card panda-card shadow rounded-3 h-100">
+                        <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <h3>$500</h3>
+                        </div>
+                        <div class="card-footer panda-footer">
+                            <div class="btn panda-btn ">Buy now >></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card panda-card shadow rounded-3 h-100">
+                        <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <h3>$500</h3>
+                        </div>
+                        <div class="card-footer panda-footer">
+                            <div class="btn panda-btn  ">Buy now >></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- subscription form -->
+        <section id="subscribe" class="container panda-subs d-flex justify-content-center align-items-center mt-5 rounded-pill">
+            <div>
+                <h1>LET'S STAY IN TOUCH</h1>
+                <h6>Get updates on sales, specials and more</h6>
+
+                <input class="form-control" type="text" placeholder="Enter your valid email"
+                    aria-label=" input example">
+                <button class="btn panda-btn mt-2">Subscribe</button>
+            </div>
+        </section>
+
+    </main>
+    <footer class="text-center mt-2">
+        <p>©2020. Panda Commerce. Fahim Montasir|All rights reserved.</p>
+    </footer>
 
 
 
